@@ -1,0 +1,297 @@
+body
+{
+    overflow-X: hidden;       /* Cacher le scroll bar horizontal*/
+    background-color: floralwhite;
+    font-family: "Century Gothic";
+}
+
+/************** Media Queries *********************************/
+
+@media (min-width: 400px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+}
+
+@media (min-width: 600px) {
+    h1 {
+        font-size: 1.9rem;
+    }
+}
+
+@media (min-width: 800px) {
+    h1 {
+        font-size: 2.1rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    h1 {
+        font-size: 3.2rem;
+    }
+}
+
+
+#hautdepage {
+    color: white;
+    font-weight: bold;
+    background-color: #9ecf88;
+    margin-top: 30px;
+    height: 40px;
+    padding-top: 10px;
+}
+#hautdepage:hover
+{
+    background-color: rgba(133,196,120,.4);
+    color: darkgreen;
+    font-weight: bold;
+}
+
+#footer
+{
+    font-style: italic;
+    font-family: "Century Gothic";
+    padding-top: 20px;
+}
+
+#logoplante1, #logoplante2
+{
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-right: 30px;
+}
+
+/****************PAGE D'ACCUEIL**********************/
+#plantation, #galerie
+{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: white;
+    border-radius: 10px;
+    opacity: 0.8;
+
+}
+
+#titreplantation
+{
+    padding-bottom: 30px;
+}
+
+h4
+{
+    padding-top: 20px;
+}
+
+.navbar-toggler-icon
+{
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#navbaraccueil
+{
+    background-color: #9ecf88;
+
+}
+#navbaraccueil a:hover
+{
+    font-weight: bold;
+
+}
+
+#boutonacheter, #boutonsite
+{
+    background-color: #9ecf88;
+    margin-top: 20px;
+    color: white;
+    font-family: "Century Gothic";
+    width: 200px;
+
+}
+
+#boutonsite:hover, #boutonacheter:hover
+{
+   background-color: darkgreen;
+    font-weight: bold;
+}
+
+#mission, #achat{
+
+    background-color:#9ecf88 ;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    font-size: x-large;
+    color: white;
+    height: max-content;
+
+}
+
+#titre
+{
+    text-shadow: 0px 25px #9ecf88, 1px 1px #9ecf88, -1px 0 1px darkgreen;
+    font-family:"Century Gothic", Arial, Helvetica, sans-serif;
+    color: darkgreen;
+    opacity: 0.8;
+    font-weight:lighter;
+    text-align:center;
+    display:block;
+    height: 200px;
+    padding-top: 80px;
+}
+
+#nousjoindre
+{
+    background-color: #9ecf88;
+    height: auto;
+    border-radius: 10px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    margin-top: 40px;
+    color: white;
+    font-weight: bold;
+}
+
+
+#adresse:hover
+{
+    cursor: pointer ;
+    color: white;
+    text-decoration: underline;
+}
+#mailto:hover
+{
+    color: white;
+}
+
+#mailto, #adresse, #telephone
+{
+    color: darkgreen;
+}
+
+#contact
+{
+    text-decoration: underline;
+}
+
+#logo
+{
+    opacity: 0.8;
+}
+
+.active
+{
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+
+#navbaraccueil a, #navbarformulaire a{
+    color: white;
+    font-size: x-large;
+    opacity: 0.9;
+    font-family: "Century Gothic";
+}
+
+#navbar a{
+    padding-left: 120px;
+}
+
+
+#plantebg #logo
+{
+    opacity: 0.9;
+    /*position: absolute;*/
+
+}
+
+#photobac
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#video
+{
+    padding-left: 40%;
+}
+
+.carousel-control-prev:hover    , .carousel-control-next:hover
+{
+    background-color: black;
+    opacity: 0.2;
+}
+
+/****************PAGE PORTFOLIO **********************/
+
+#image1:hover, #image2:hover, #image3:hover, #image4:hover, #image5:hover, #image6:hover, #image7:hover, #image8:hover, #image9:hover,#image10:hover
+{
+    transform: scale(1.1);
+    transition: .2s;
+}
+
+#image1, #image2, #image3, #image4, #image5, #image6, #image7, #image8, #image9,#image10
+{
+    padding-top-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+/****************PAGE FORMULAIRE**********************/
+
+@media print {
+    #head,#foot, .jumbotron-fluid, #soumission{
+        display: none;
+    }
+}
+
+#navbarformulaire a{
+    color: white;
+}
+
+#typeslegumes
+{
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.form-check-inline
+{
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+#inscriptions
+{
+    background-color: floralwhite;
+    color: #9ecf88;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+#soumettre, #annuler
+{
+    background-color:#9ecf88 ;
+    color: white;
+    font-weight: bold;
+    width: 120px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+#soumettre:hover, #annuler:hover
+{
+    background-color: darkgreen;
+    font-weight: bold;
+}
+
+#transmission
+{
+    color:#9ecf88 ;
+    font-family: "Century Gothic";
+    margin-top: 10%;
+
+}
+

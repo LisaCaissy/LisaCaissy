@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!--Lisa Caissy-->
+<!--Animation Web-->
+<html lang="fr-ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <title>Formulaire</title>
+</head>
+<body>
+<header id="head">
+    <nav class="navbar navbar-expand-lg" id="navbaraccueil">
+        <a class="navbar-brand " href="accueil.html">
+            <img class="img-fluid" src="medias/logoplante.png" alt="logo" id="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+                aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav ">
+                <li class="nav-item ">
+                    <a class="nav-link"
+                       href="accueil.html">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active"
+                       href="formulaire.html">Formulaire<span class="active"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link "
+                       href="informations.html">Informations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link "
+                       href="jeu.html">Jeu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#foot">Bas de page</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="container-fluid" id="formulaire">
+    <div class="row" id="inscriptions">
+        <div class="col-xl-12 col-sm-10">
+            <div class="jumbotron-fluid display-3 text-center">
+                Inscriptions
+            </div>
+        </div>
+    </div>
+    <form>
+        <div class="row" id="usager">
+            <div class="col-xl-3 form-group col-sm-5 form-group offset-xl-3">
+                <label for="nom">Nom*</label>
+                <input type="text" class="form-control" id="nom">
+            </div>
+            <div class="col-xl-3 form-group col-sm-5 form-group">
+                <label for="prenom">Prénom*</label>
+                <input type="text" class="form-control" id="prenom">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-6 form-group col-sm-10 form-group offset-xl-3">
+                <label for="adresse">Adresse*</label>
+                <input type="text" class="form-control" id="adresse">
+            </div>
+            <div class="col-xl-6 form-group col-sm-10 form-group offset-xl-3">
+                <label for="ville">Ville*</label>
+                <input type="text" class="form-control" id="ville">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-6 form-group col-sm-10 form-group offset-xl-3 ">
+                <label for="Province">Province*</label>
+                <input type="text" class="form-control" id="province">
+            </div>
+            <div class="col-xl-6 form-group col-sm-10 form-group offset-xl-3">
+                <label for="codepostal">Code postal*</label>
+                <input type="text" class="form-control" id="codepostal">
+            </div>
+        </div>
+    </form>
+    <div class="form-group">
+        <div class="row">
+            <div class="col-xl-6 form-group col-sm-10 form-group offset-xl-3">
+                <label for="pays">Pays</label>
+                <select class="form-control" id="pays">
+                    <option selected>Choisissez parmis les choix suivants</option>
+                    <option>Brésil</option>
+                    <option>Canada</option>
+                    <option>États-Unis</option>
+                    <option>France</option>
+                    <option>Japon</option>
+                    <option>Laos</option>
+                    <option>Maroc</option>
+                    <option>Mexique</option>
+                    <option>Turquie</option>
+                    <option>Vénézuela</option>
+                    <option>Zimbabwe</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="col-12" id="typeslegumes">
+        <div class="row">
+            <div class="form-check form-check-inline offset-xl-3">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">Tomates
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">Carottes
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">Laitues
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">Patates
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">Radis
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">Citrouille
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-check form-check-inline offset-xl-3">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">Poivrons
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">Fines herbes
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">Concombres
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" id="autres" value="">Autres
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-3 form-group col-sm-5 form-group offset-xl-3">
+            <input type="text" class="form-control" placeholder="Précisez" id="precisionautres">
+        </div>
+    </div>
+
+    <div class="row" id="soumission">
+        <div class="col-xl-3 form-group col-sm-3 form-group offset-xl-3">
+            <div class="form-group">
+                <label for="insererfichier">Ajouter une photo</label>
+                <input type="file" class="form-control-file" id="insererfichier" aria-describedby="fileHelp">
+                <small id="fileHelp" class="form-text text-muted">Choisissez le fichier que vous désirez soumettre.
+                </small>
+            </div>
+        </div>
+        <div class="col-xl-1 col-sm-2 offset-xl-1 ">
+            <a href="#formulaire" class="btn" id="soumettre">Soumettre</a>
+        </div>
+        <div class="col-xl-1 col-sm-2 ">
+            <a class="btn" id="annuler">
+                Annuler</a>
+        </div>
+    </div>
+</div>
+
+<footer id="foot">
+    <div class="row text-center">
+        <div class="col-12">
+            <a href="#head"><h6 id="hautdepage">Haut de page</h6></a>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-xl-1 offset-xl-3" id="logoplante1">
+            <img src="medias/plants.png" class="img-fluid" alt="LogoPlante">
+        </div>
+        <div class="col-xl-4 col-md-4 col-sm-4 text-center" id="footer">
+            <p class="text-center">Ce site a été créé à des fins éducatives. Aucune association avec le mouvement
+                des
+                "Incroyables comestibles". Pour plus d'informations, allez
+                directement sur leur site web : <a href="http://icvicto.org/" target="_blank">www.icvicto.org</a>
+            </p>
+        </div>
+        <div class="col-xl-1" id="logoplante2">
+            <img src="medias/plants.png" class="img-fluid" alt="LogoPlante">
+        </div>
+    </div>
+</footer>
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>   <!--JQUERY-->
+<script src="js/bootstrap.js"></script>
+<script src="js/script.js"></script>
+<!-- le mettre à la dernière ligne du body pour améliorer la performance. -->
+</body>
+</html>
