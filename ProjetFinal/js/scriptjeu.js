@@ -13,8 +13,8 @@ let Application = PIXI.Application,
 
 //Create a Pixi Application
 let app = new Application({
-        width: 960,
-        height: 640,
+        width: 250,
+        height: 250,
         antialiasing: true,
         transparent: false,
         resolution: 1
@@ -27,7 +27,6 @@ document.body.appendChild(app.view);
 loader
     .add("medias/bean.png")
     .add("medias/background.png")
-    .add("medias/flyleft.png")
     .load(setup);
 
 function setup() {
@@ -36,8 +35,6 @@ function setup() {
     app.stage.addChild(gameScene);
 
     background = new Sprite(resources["medias/background.png"].texture);
-    background.x = 0;
-    background.y = 0;
 
     bean = new Sprite(resources["medias/bean.png"].texture);
     bean.x = 10;
@@ -45,12 +42,8 @@ function setup() {
     bean.vx = 0;
     bean.vy = 0;
 
-    fly = new Sprite(resources["medias/flyleft.png"].texture);
-    fly.x = 800;
-
     gameScene.addChild(background);
     gameScene.addChild(bean);
-    gameScene.addChild(fly);
 
     }
 
@@ -115,11 +108,13 @@ function gameLoop(delta) {
 }
 
 function play(delta) {
+
     bean.x += bean.vx;
     bean.y += bean.vy;
 
 }
 
+//The `keyboard` helper function
 function keyboard(keyCode) {
     var key = {};
     key.code = keyCode;
@@ -128,26 +123,24 @@ function keyboard(keyCode) {
     key.press = undefined;
     key.release = undefined;
     //The `downHandler`
-    key.downHandler = event =>
-    {
+    key.downHandler = event => {
         if (event.keyCode === key.code) {
             if (key.isUp && key.press) key.press();
             key.isDown = true;
             key.isUp = false;
         }
         event.preventDefault();
-    }
+    };
 
     //The `upHandler`
-    key.upHandler = event =>
-    {
+    key.upHandler = event => {
         if (event.keyCode === key.code) {
             if (key.isDown && key.release) key.release();
             key.isDown = false;
             key.isUp = true;
         }
         event.preventDefault();
-    }
+    };
 
     //Attach event listeners
     window.addEventListener(
@@ -158,5 +151,6 @@ function keyboard(keyCode) {
     );
     return key;
 }
+
 
 

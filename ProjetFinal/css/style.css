@@ -32,6 +32,64 @@ body
 }
 
 
+@media print {
+    #head,#foot, .jumbotron-fluid, #soumission{
+        display: none;
+    }
+}
+/****************** Header **************************************/
+
+
+.navbar-toggler-icon
+{
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#navbaraccueil
+{
+    background-color: #9ecf88;
+
+}
+#navbaraccueil a:hover
+{
+    font-weight: bold;
+
+}
+
+#logo
+{
+    opacity: 0.8;
+}
+
+.active
+{
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+
+#navbaraccueil a, #navbarformulaire a{
+    color: white;
+    font-size: x-large;
+    opacity: 0.9;
+    font-family: "Century Gothic";
+}
+
+#navbar a{
+    padding-left: 120px;
+}
+
+
+#plantebg #logo
+{
+    opacity: 0.9;
+}
+
+
+
+/****************** Footer **************************************/
+
 #hautdepage {
     color: white;
     font-weight: bold;
@@ -82,24 +140,6 @@ h4
     padding-top: 20px;
 }
 
-.navbar-toggler-icon
-{
-    background-color: white;
-    border-radius: 5px;
-    border: 1px solid black;
-}
-
-#navbaraccueil
-{
-    background-color: #9ecf88;
-
-}
-#navbaraccueil a:hover
-{
-    font-weight: bold;
-
-}
-
 #boutonacheter, #boutonsite
 {
     background-color: #9ecf88;
@@ -107,7 +147,6 @@ h4
     color: white;
     font-family: "Century Gothic";
     width: 200px;
-
 }
 
 #boutonsite:hover, #boutonacheter:hover
@@ -124,7 +163,6 @@ h4
     font-size: x-large;
     color: white;
     height: max-content;
-
 }
 
 #titre
@@ -174,45 +212,10 @@ h4
     text-decoration: underline;
 }
 
-#logo
-{
-    opacity: 0.8;
-}
-
-.active
-{
-    font-weight: bold;
-    text-decoration-line: underline;
-}
-
-#navbaraccueil a, #navbarformulaire a{
-    color: white;
-    font-size: x-large;
-    opacity: 0.9;
-    font-family: "Century Gothic";
-}
-
-#navbar a{
-    padding-left: 120px;
-}
-
-
-#plantebg #logo
-{
-    opacity: 0.9;
-    /*position: absolute;*/
-
-}
-
 #photobac
 {
     padding-top: 50px;
     padding-bottom: 50px;
-}
-
-#video
-{
-    padding-left: 40%;
 }
 
 .carousel-control-prev:hover    , .carousel-control-next:hover
@@ -239,12 +242,6 @@ h4
     margin-left: 100px;
 }
 /****************PAGE FORMULAIRE**********************/
-
-@media print {
-    #head,#foot, .jumbotron-fluid, #soumission{
-        display: none;
-    }
-}
 
 #navbarformulaire a{
     color: white;
@@ -273,7 +270,7 @@ h4
 
 #soumettre, #annuler
 {
-    background-color:#9ecf88 ;
+    background-color:darkgreen ;
     color: white;
     font-weight: bold;
     width: 120px;
@@ -283,7 +280,7 @@ h4
 
 #soumettre:hover, #annuler:hover
 {
-    background-color: darkgreen;
+    background-color: #9ecf88;
     font-weight: bold;
 }
 
@@ -293,5 +290,16 @@ h4
     font-family: "Century Gothic";
     margin-top: 10%;
 
+}
+
+/******************* page info ************************************/
+
+#qui
+{
+    background-color: #9ecf88;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
